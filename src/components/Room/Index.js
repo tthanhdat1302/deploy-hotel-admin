@@ -72,7 +72,7 @@ export default function Index(){
                                     <td>{room.ImagePhong}</td>  
                                     <td>{room.MaKhachSan}</td> 
                                     {/* <td style={{width:'115px'}}><Button color="success" onClick={()=>updateRoom(room.MaPhong)}>Cập nhật</Button>{' '}</td> */}
-                                    <td><Button color="danger" onClick={()=>deleteRoom(room.MaPhong)}>Xóa</Button>{' '}</td>
+                                    <td><Button color="danger" onClick={()=>deleteRoom(room._id)}>Xóa</Button>{' '}</td>
                                 </tr>    
                             )
                         }

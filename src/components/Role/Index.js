@@ -22,7 +22,7 @@ function Index(){
 
   const deleteRole=(id)=>{
     Axios.delete(`https://deploy-hotel-api.herokuapp.com/role/delete/${id}`).then(() => {
-          setRole(role.filter(x=>x.roleId!=id))
+          setRole(role.filter(x=>x._id!=id))
         } 
     )
   }
@@ -47,11 +47,11 @@ function Index(){
           {
             role.map(a=>
               <tr>
-                <th>{a.roleId}</th>
+                <th>{a._id}</th>
                 <td>{a.roleName}</td>
                 <td style={{width:"115px"}}>
-                    <Button color="success" onClick={()=>updateRole(a.roleId)} style={{width:'100%',marginBottom:'5px'}}>Cập nhật</Button>{' '}
-                    <Button color="danger" onClick={() => deleteRole(a.roleId)} style={{width:'100%'}}>Xóa</Button>{' '}
+                    <Button color="success" onClick={()=>updateRole(a._id)} style={{width:'100%',marginBottom:'5px'}}>Cập nhật</Button>{' '}
+                    <Button color="danger" onClick={() => deleteRole(a._id)} style={{width:'100%'}}>Xóa</Button>{' '}
                 </td>
               </tr>
             )

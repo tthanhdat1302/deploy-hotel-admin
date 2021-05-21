@@ -38,7 +38,7 @@ export default function HotelCreate() {
 
   city.map((city) => {
     option.push({
-      value: city.MaThanhPho,
+      value: city._id,
       label: city.TenThanhPho,
     });
   });

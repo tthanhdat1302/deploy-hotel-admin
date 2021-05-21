@@ -40,7 +40,7 @@ function Index(){
 
   const deleteCity=(id)=>{
     Axios.delete(`https://deploy-hotel-api.herokuapp.com/city/delete/${id}`).then(() => {
-          setCityList(cityList.filter(x=>x.MaThanhPho!=id))
+          setCityList(cityList.filter(x=>x._id!=id))
         } 
     )
   }
@@ -67,11 +67,11 @@ function Index(){
           {
             cityList.map(a=>
               <tr>
-                <th>{a.MaThanhPho}</th>
+                <th>{a._id}</th>
                 <td>{a.TenThanhPho}</td>
                 <td>{a.ImageThanhPho}</td>
-                <td style={{width:"115px"}}><Button color="success" onClick={()=>updateCity(a.MaThanhPho)}>Cập nhật</Button>{' '}</td>
-                <td><Button color="danger" onClick={() => deleteCity(a.MaThanhPho)}>Xóa</Button>{' '}</td>
+                <td style={{width:"115px"}}><Button color="success" onClick={()=>updateCity(a._id)}>Cập nhật</Button>{' '}</td>
+                <td><Button color="danger" onClick={() => deleteCity(a._id)}>Xóa</Button>{' '}</td>
               </tr>
             )
           }

@@ -26,7 +26,7 @@ export default function HotelUpdate() {
     const history=useHistory();
 
     const updateHotel=()=>{
-        Axios.put("https://deploy-hotel-api.herokuapp.com/hotel/update"+id,{
+        Axios.put("https://deploy-hotel-api.herokuapp.com/hotel/update/"+id,{
             nameHotel:nameHotel,
             location:location,
             description:description,
@@ -50,7 +50,7 @@ export default function HotelUpdate() {
 
     city.map(city=>{
         option.push({
-            value:city.MaThanhPho,
+            value:city._id,
             label:city.TenThanhPho
         })
     })

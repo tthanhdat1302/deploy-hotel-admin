@@ -16,7 +16,7 @@ export default function Index(){
 
     const deleteHotel=(id)=>{
         Axios.delete("https://deploy-hotel-api.herokuapp.com/hotel/delete/"+id).then(()=>{
-            setHotelList(hotelList.filter(x=>x.MaKhachSan!=id))
+            setHotelList(hotelList.filter(x=>x._id!=id))
         })
     }
     
@@ -52,7 +52,7 @@ export default function Index(){
                     {
                         hotelList.map(hotel=>
                             <tr>                              
-                                <th>{hotel.MaKhachSan}</th>
+                                <th>{hotel._id}</th>
                                 <td>{hotel.TenKhachSan}</td> 
                                 <td>{hotel.DiaChi}</td>
                                 <td>{hotel.MoTa}</td> 
@@ -61,8 +61,8 @@ export default function Index(){
                                 <td>{hotel.TinhTrang}</td>                  
                                 <td>{hotel.MaThanhPho}</td>  
                                 {/* <td style={{width:'115px'}}><Button color="success" onClick={()=>updateHotel(hotel.MaKhachSan)}>Cập nhật</Button>{' '}</td> */}
-                                <td style={{width:'133px'}}><Button color="info" onClick={()=>history.push(`/hotel/${hotel.MaKhachSan}/room`)}>Xem Phòng</Button>{' '}</td>
-                                <td><Button color="danger" onClick={()=>deleteHotel(hotel.MaKhachSan)}>Xóa</Button>{' '}</td>
+                                <td style={{width:'133px'}}><Button color="info" onClick={()=>history.push(`/hotel/${hotel._id}/room`)}>Xem Phòng</Button>{' '}</td>
+                                <td><Button color="danger" onClick={()=>deleteHotel(hotel._id)}>Xóa</Button>{' '}</td>
                             </tr>    
                         )
                     }
