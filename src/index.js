@@ -1,12 +1,18 @@
-import React from 'react';
+import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from "./components/Login/Login";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {localStorage.getItem("role") == null ||
+    localStorage.getItem("role") != "Admin" ? (
+      <Login></Login>
+    ) : (
+      <App></App>
+    )}
   </React.StrictMode>,
   document.getElementById('root')
 );
