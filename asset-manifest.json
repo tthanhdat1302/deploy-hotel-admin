@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/deploy-hotel-admin/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/deploy-hotel-admin/static/js/main.61900ae8.chunk.js",
-    "main.js.map": "/deploy-hotel-admin/static/js/main.61900ae8.chunk.js.map",
+    "main.js": "/deploy-hotel-admin/static/js/main.dbde2e0f.chunk.js",
+    "main.js.map": "/deploy-hotel-admin/static/js/main.dbde2e0f.chunk.js.map",
     "runtime-main.js": "/deploy-hotel-admin/static/js/runtime-main.90fd85fd.js",
     "runtime-main.js.map": "/deploy-hotel-admin/static/js/runtime-main.90fd85fd.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/deploy-hotel-admin/static/css/2.4c97ca4f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.2639b4da.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.61900ae8.chunk.js"
+    "static/js/main.dbde2e0f.chunk.js"
   ]
 }
