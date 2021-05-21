@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/deploy-hotel-admin/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/deploy-hotel-admin/static/js/main.10205993.chunk.js",
+    "main.js.map": "/deploy-hotel-admin/static/js/main.10205993.chunk.js.map",
+    "runtime-main.js": "/deploy-hotel-admin/static/js/runtime-main.90fd85fd.js",
+    "runtime-main.js.map": "/deploy-hotel-admin/static/js/runtime-main.90fd85fd.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/deploy-hotel-admin/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c977a818.chunk.js": "/deploy-hotel-admin/static/js/2.c977a818.chunk.js",
+    "static/js/2.c977a818.chunk.js.map": "/deploy-hotel-admin/static/js/2.c977a818.chunk.js.map",
+    "static/js/3.b1dd1243.chunk.js": "/deploy-hotel-admin/static/js/3.b1dd1243.chunk.js",
+    "static/js/3.b1dd1243.chunk.js.map": "/deploy-hotel-admin/static/js/3.b1dd1243.chunk.js.map",
+    "index.html": "/deploy-hotel-admin/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/deploy-hotel-admin/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/deploy-hotel-admin/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.c977a818.chunk.js.LICENSE.txt": "/deploy-hotel-admin/static/js/2.c977a818.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90fd85fd.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.c977a818.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.10205993.chunk.js"
+  ]
+}
