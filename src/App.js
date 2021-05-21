@@ -45,51 +45,51 @@ class App extends Component {
             <Collapse navbar>
               <Nav className="mr-auto" navbar>
                 <NavItem>
-                  <NavLink href="/">Home</NavLink>
+                  <NavLink href="/deploy-hotel-admin">Home</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/city">City</NavLink>
+                  <NavLink href="/deploy-hotel-admin/city">City</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/hotel">Hotel</NavLink>
+                  <NavLink href="/deploy-hotel-admin/hotel">Hotel</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/role">Role</NavLink>
+                  <NavLink href="/deploy-hotel-admin/role">Role</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="/user">User</NavLink>
+                  <NavLink href="/deploy-hotel-admin/user">User</NavLink>
                 </NavItem>
                 <NavbarText>{localStorage.getItem("email")}</NavbarText>
                 <NavItem>
-                  <NavLink href="/logout">Logout</NavLink>
+                  <NavLink href="/deploy-hotel-admin/logout">Logout</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
           </Navbar>
           <Switch>
-            <Route exact path="/city" component={CityIndex} />
-            <Route path="/city/create" component={CityCreate} />
-            <Route path="/city/update/:id" component={CityUpdate} />
+            <Route exact path="/deploy-hotel-admin/city" component={CityIndex} />
+            <Route path="/deploy-hotel-admin/city/create" component={CityCreate} />
+            <Route path="/deploy-hotel-admin/city/update/:id" component={CityUpdate} />
 
-            <Route exact path="/hotel" component={HotelIndex} />
-            <Route path="/hotel/create" component={HotelCreate} />
-            <Route path="/hotel/update/:id" component={HotelUpdate} />
+            <Route exact path="/deploy-hotel-admin/hotel" component={HotelIndex} />
+            <Route path="/deploy-hotel-admin/hotel/create" component={HotelCreate} />
+            <Route path="/deploy-hotel-admin/hotel/update/:id" component={HotelUpdate} />
 
-            <Route exact path="/hotel/:id/room" component={RoomIndex} />
-            <Route path="/hotel/:id/room/create" component={RoomCreate} />
+            <Route exact path="/deploy-hotel-admin/hotel/:id/room" component={RoomIndex} />
+            <Route path="/deploy-hotel-admin/hotel/:id/room/create" component={RoomCreate} />
             <Route
-              path="/hotel/:idHotel/room/update/:id"
+              path="/deploy-hotel-admin/hotel/:idHotel/room/update/:id"
               component={RoomUpdate}
             />
 
-            <Route exact path="/role" component={RoleIndex} />
-            <Route path="/role/create" component={RoleCreate} />
-            <Route path="/role/update/:id" component={RoleUpdate} />
+            <Route exact path="/deploy-hotel-admin/role" component={RoleIndex} />
+            <Route path="/deploy-hotel-admin/role/create" component={RoleCreate} />
+            <Route path="/deploy-hotel-admin/role/update/:id" component={RoleUpdate} />
 
-            <Route exact path="/user" component={UserIndex} />
-            <Route path="/user/update/:id" component={UserUpdate} />
+            <Route exact path="/deploy-hotel-admin/user" component={UserIndex} />
+            <Route path="/deploy-hotel-admin/user/update/:id" component={UserUpdate} />
 
-            <Route exact path="/logout" component={Logout}></Route>
+            <Route exact path="/deploy-hotel-admin/logout" component={Logout}></Route>
           </Switch>
         </div>
       </Router>
