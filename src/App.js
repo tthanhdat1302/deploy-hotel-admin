@@ -23,23 +23,23 @@ class App extends Component {
         <Collapse navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin">Home</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin/city">City</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/city">City</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin/hotel">Hotel</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/hotel">Hotel</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin/role">Role</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/role">Role</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin/user">User</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/user">User</NavLink>
             </NavItem>
             <NavbarText>{localStorage.getItem("email")}</NavbarText>
             <NavItem>
-              <NavLink href="/deploy-hotel-admin/logout">Logout</NavLink>
+              <NavLink href="https://tthanhdat1302.github.io/deploy-hotel-admin/logout">Logout</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
